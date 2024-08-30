@@ -1,0 +1,49 @@
+:root {
+    --cor-fundo: #F5F5F5; /* Cinza claro para fundo */
+    --cor-principal: #FFFFFF; /* Branco para a caixa principal */
+    --cor-secundaria: #4CAF50; /* Verde para secundária, relacionado à saúde */
+    --cor-destaque: #FF5722; /* Laranja para destaque, energizante */
+    --cor-texto: #333333; /* Cinza escuro para texto */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    transform: scale(1.05);
+}
